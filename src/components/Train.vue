@@ -1,5 +1,6 @@
 <template>
     <div class="train">
+        <h3>火车</h3>
         <p>{{depart}} -- {{dest}}</p>
         <p>{{departTime}} <b>{{departStation}}</b></p>
         <p>{{destTime}} <b>{{destStation}}</b></p>

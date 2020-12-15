@@ -1,5 +1,6 @@
 <template>
     <div class="hotel">
+        <h3>住宿</h3>
         <p>{{name}}</p>
         <p>{{address}}</p>
         <p>订单号 : {{confirmationNum}}</p>
