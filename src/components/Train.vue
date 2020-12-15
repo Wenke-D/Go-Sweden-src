@@ -1,8 +1,8 @@
 <template>
     <div class="train">
-        <p>{{origin}} -- {{dest}}</p>
-        <p>{{begin}} <b>{{origin}}</b></p>
-        <p>{{end}} <b>{{dest}}</b></p>
+        <p>{{depart}} -- {{dest}}</p>
+        <p>{{departTime}} <b>{{departStation}}</b></p>
+        <p>{{destTime}} <b>{{destStation}}</b></p>
     </div>
 
 </template>
@@ -11,10 +11,12 @@
     export default {
         name: "Train",
         props: {
-            origin: String,
+            depart: String,
             dest: String,
-            begin: String,
-            end: String
+            departStation: String,
+            departTime: String,
+            destStation: String,
+            destTime: String
         }
     }
 </script>

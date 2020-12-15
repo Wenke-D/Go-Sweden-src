@@ -1,26 +1,33 @@
 <template>
     <div id="app">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
-        <Train begin="18:03" dest="Kiruna" end="09:11" origin="Sthlm"/>
-        <Plane dest="Amsterdam, Schiphol (AMS)" v-bind:dest-time="new Date()" flight-num="AF1640" company="Air France"
-               depart="Paris, Paris Charles De Gaulle Airport " v-bind:depart-time="new Date()"/>
+        <Day location="kiruna" v-bind:events="eventList"></Day>
     </div>
 </template>
 
 <script>
-    import HelloWorld from './components/HelloWorld.vue'
-    import Train from "@/components/Train";
-    import Plane from "@/components/Plane";
+
+    import Day from "@/components/Day";
+    import events from "@/assets/data";
+
 
     export default {
         name: 'App',
         components: {
-            Plane,
-            Train,
-            HelloWorld,
+            Day
+        },
+        data: function () {
+            let eventList = []
+            for (let hotel of events.hotels){
+                hotel.type = "Hotel"
+                eventList.push(hotel);
+            }
+            return {
+                eventList:eventList
+            };
         }
     }
+
+
 </script>
 
 <style>
