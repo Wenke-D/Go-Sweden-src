@@ -18,12 +18,12 @@ export default {
     ],
     "planes": [
         {
-            "depart": "Paris Charles De Gaulle Airport (CDG)",
+            "depart": "CDG Terminal 2F",
             "departTime": "11:45",
             "dest": "Amsterdam, Schiphol",
             "destTime": "13:05",
             "company": "Air France",
-            "flightNum": "AF1640"
+            "flightNum": "AF1640",
         },
         {
             "depart": "Amsterdam, Schiphol (AMS)",
@@ -31,7 +31,7 @@ export default {
             "dest": "Stockholm, Arlanda Airport (ARN)",
             "destTime": "16:35",
             "company": "KLM",
-            "flightNum": "KL1115"
+            "flightNum": "KL1115",
         },
         {
             "depart": "Stockholm, Arlanda Airport (ARN)",
@@ -39,7 +39,7 @@ export default {
             "dest": "Paris, Paris Charles De Gaulle Airport (CDG)",
             "destTime": "21:50",
             "company": "Air France",
-            "flightNum": "AF1063"
+            "flightNum": "AF1063",
         }
     ],
     "trains": [
@@ -75,7 +75,7 @@ export default {
             "name": "SPiS Hotel & Hostel",
             "address": "Bergmästaregatan 7, 98133 Kiruna",
             "confirmationNum": "2339.874.722",
-            "code": "`2441`",
+            "code": "2441",
             "checkIn": "15:00 - 23:00",
             "checkout": "2:00 - 12:00"
         },
@@ -83,7 +83,7 @@ export default {
             "name": "STF Abisko Turiststation",
             "address": "98107, 98107 Abisko, Sweden",
             "confirmationNum": "3253.637.834",
-            "code": "`7958`",
+            "code": "7958",
             "checkIn": "15:00 - 17:00",
             "checkout": "8:00 - 10:00"
         },
@@ -91,7 +91,7 @@ export default {
             "name": "STF Abisko Turiststation",
             "address": "98107, 98107 Abisko, Sweden",
             "confirmationNum": "3187.299.273",
-            "code": "`7846`",
+            "code": "7846",
             "checkIn": "15:00 - 17:00",
             "checkout": "8:00 - 10:00"
         },
@@ -99,7 +99,7 @@ export default {
             "name": "STF Abisko Turiststation",
             "address": "98107, 98107 Abisko, Sweden",
             "confirmationNum": "3269.563.265",
-            "code": "`4646`",
+            "code": "4646",
             "checkIn": "15:00 - 17:00",
             "checkout": "8:00 - 10:00"
         },

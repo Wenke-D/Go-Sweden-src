@@ -1,10 +1,25 @@
 <template>
-    <div class="train">
-        <h3>火车</h3>
-        <p>{{depart}} -- {{dest}}</p>
-        <p>{{departTime}} <b>{{departStation}}</b></p>
-        <p>{{destTime}} <b>{{destStation}}</b></p>
-    </div>
+    <el-col :sm="18" :md="8">
+        <div class="train">
+            <el-card class="box-card">
+                <div slot="header" class="clearfix">
+                    <span>火车</span>
+                    <el-button style="float: right; padding: 3px 0" type="text">
+                        <el-link type="info" :href="address_url">Google map</el-link>
+                    </el-button>
+                </div>
+                <div class="text item">
+                    {{depart}} -- {{dest}}
+                </div>
+                <div class="text item">
+                    {{departTime}} <b>{{departStation}}</b>
+                </div>
+                <div class="text item">
+                    {{destTime}} <b>{{destStation}}</b>
+                </div>
+            </el-card>
+        </div>
+    </el-col>
 
 </template>
 
@@ -18,6 +33,9 @@
             departTime: String,
             destStation: String,
             destTime: String
+        },
+        data: function () {
+            return {address_url: "http://maps.google.com/?q=" + this.depart};
         }
     }
 </script>

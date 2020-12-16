@@ -1,7 +1,12 @@
 <template>
     <div id="app">
-        <Day v-for="(day,index) in plans" v-bind="day" v-bind:key="index"></Day>
+        <el-container>
+            <el-main class="el-main">
+                <Day v-for="(day,index) in plans" v-bind="day" v-bind:key="index"></Day>
+            </el-main>
+        </el-container>
     </div>
+
 </template>
 
 <script>
@@ -9,6 +14,18 @@
     import Day from "@/components/Day";
     import events from "@/assets/data";
     import schedules from "@/assets/schedule";
+
+    export default {
+        name: 'App',
+        components: {
+            Day
+        },
+        data: function () {
+            return {
+                plans: eachDayPlans
+            };
+        }
+    }
 
     /* load data */
     let table = {
@@ -44,28 +61,21 @@
         throw new Error("you have hotel left")
     }
 
-    export default {
-        name: 'App',
-        components: {
-            Day
-        },
-        data: function () {
-            return {
-                plans: eachDayPlans
-            };
-        }
-    }
-
 
 </script>
 
 <style>
-    #app {
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
+    @media (min-width: 1000px) {
+
+        body {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
+
+    .el-main {
+        color: #333;
+    }
+
 </style>

@@ -1,27 +1,61 @@
 <template>
-    <div class="plane">
-        <h3>航班</h3>
-        <p>{{flightNum}} {{company}}</p>
-        <p>{{departTime}} {{depart}}</p>
-        <p>{{destTime}} {{dest}}</p>
-    </div>
-    
+    <el-col :sm="18" :md="8">
+        <div class="plane">
+            <el-card class="box-card">
+                <div slot="header" class="clearfix">
+                    <span>航班</span>
+                    <el-button style="float: right; padding: 3px 0" type="text">
+                        <el-link type="info" :href="address_url">Google map</el-link>
+                    </el-button>
+                </div>
+                <div class="text item">
+                    {{flightNum}} {{company}}
+                </div>
+                <div class="text item">
+                    {{departTime}} {{depart}}
+                </div>
+                <div class="text item">
+                    {{destTime}} {{dest}}
+                </div>
+            </el-card>
+        </div>
+    </el-col>
 </template>
 
 <script>
     export default {
         name: "Plane",
-        props:{
-            depart:String,
-            departTime:String,
-            dest:String,
-            destTime:String,
-            company:String,
-            flightNum:String
+        props: {
+            depart: String,
+            departTime: String,
+            dest: String,
+            destTime: String,
+            company: String,
+            flightNum: String
+        },
+        data: function () {
+            return {address_url: "http://maps.google.com/?q=" + this.depart};
         }
     }
 </script>
 
 <style scoped>
+    .text {
+        font-size: 14px;
+    }
+
+    .item {
+        margin-bottom: 18px;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both
+    }
 
 </style>
