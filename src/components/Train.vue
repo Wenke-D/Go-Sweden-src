@@ -1,5 +1,4 @@
 <template>
-    <el-col :sm="18" :md="8">
         <div class="train">
             <el-card class="box-card">
                 <div slot="header" class="clearfix">
@@ -19,7 +18,6 @@
                 </div>
             </el-card>
         </div>
-    </el-col>
 
 </template>
 

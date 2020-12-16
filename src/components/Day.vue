@@ -4,8 +4,12 @@
             <div class="day">
                 <h2>Day {{dayNum}} {{location}}</h2>
                 <el-row :gutter="20">
-                    <component v-for="(value, index) in events" v-bind:is="value.type" v-bind="value"
-                               v-bind:key="index"/>
+                    <template v-for="(value, index) in events">
+                        <el-col :sm="24" :md="8" v-bind:key="index">
+                            <component v-bind:is="value.type" v-bind="value"/>
+                        </el-col>
+                    </template>
+
                 </el-row>
             </div>
         </el-col>

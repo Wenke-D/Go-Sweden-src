@@ -4,7 +4,7 @@
         <ul>
             <el-row>
                 <template v-for="index in 10">
-                    <el-col span="8" v-bind:key="index">
+                    <el-col :span="8" v-bind:key="index">
                         <li>{{ index }}</li>
                     </el-col>
 

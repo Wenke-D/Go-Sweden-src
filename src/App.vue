@@ -1,8 +1,8 @@
 <template>
     <div id="app">
         <el-container>
-            <Document></Document>
             <el-main class="el-main">
+                <Document></Document>
                 <Day v-for="(day,index) in plans" v-bind="day" v-bind:key="index"></Day>
             </el-main>
         </el-container>
