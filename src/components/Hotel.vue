@@ -2,16 +2,13 @@
         <div class="hotel">
             <el-card class="box-card">
                 <div slot="header" class="clearfix">
-                    <span>住宿</span>
+                    <span class="title">住宿</span>
                     <el-button style="float: right; padding: 3px 0" type="text">
-                        <el-link type="info" :href="address_url">Google map</el-link>
+                        <el-link type="warning" :href="address_url">路线</el-link>
                     </el-button>
                 </div>
                 <div class="text item">
-                    <p>{{name}}</p>
-                </div>
-                <div class="text item">
-                    <p>{{address}}</p>
+                    <h3>{{name}}</h3>
                 </div>
                 <div class="text item">
                     <p>订单号 : {{confirmationNum}}</p>
@@ -44,5 +41,31 @@
 </script>
 
 <style scoped>
+    .title{
+        color: coral;
+        font-size: larger;
+    }
 
+    .text {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .item {
+        margin-bottom: 18px;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both
+    }
+
+    .box-card{
+        border-radius: 35px;
+    }
 </style>

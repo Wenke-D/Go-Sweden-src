@@ -18,48 +18,69 @@ export default {
     ],
     "planes": [
         {
-            "depart": "CDG Terminal 2F",
-            "departTime": "11:45",
-            "dest": "Amsterdam, Schiphol",
-            "destTime": "13:05",
+            "departCity":"Paris",
+            "departStation": "CDG Terminal 2F",
+            "departStringTime": "2020-12-24 11:45",
+
+            "destCity": "Amsterdam",
+            "destStation":"Amsterdam, Schiphol",
+            "destStringTime": "2020-12-24 13:05",
+
             "company": "Air France",
             "flightNum": "AF1640",
+            "planeModel":"Airbus A319-100",
         },
         {
-            "depart": "Amsterdam, Schiphol (AMS)",
-            "departTime": "14:35",
-            "dest": "Stockholm, Arlanda Airport (ARN)",
-            "destTime": "16:35",
+            "departCity":"Amsterdam",
+            "departStation": "Amsterdam, Schiphol (AMS)",
+            "departStringTime": "2020-12-24 14:35",
+
+            "destCity": "Stockholm",
+            "destStation":"Stockholm, Arlanda Airport (ARN)",
+            "destStringTime": "2020-12-24 16:35",
+
             "company": "KLM",
             "flightNum": "KL1115",
+            "planeModel":"Boeing 737-800",
         },
         {
-            "depart": "Stockholm, Arlanda Airport (ARN)",
-            "departTime": "19:05",
-            "dest": "Paris, Paris Charles De Gaulle Airport (CDG)",
-            "destTime": "21:50",
+            "departCity":"Stockholm",
+            "departStation": "Stockholm, Arlanda Airport (ARN)",
+            "departStringTime": "2021-01-04 19:05",
+
+            "destCity": "Paris",
+            "destStation":"Paris Charles De Gaulle Airport (CDG)",
+            "destStringTime": "2021-01-04 21:50",
+
             "company": "Air France",
             "flightNum": "AF1063",
+            "planeModel":"Airbus A319-100",
         }
     ],
     "trains": [
         {
-            "trainNum": 94,
-            "depart": "斯德哥尔摩",
-            "dest": "Kiruna",
+            "departCity": "斯德哥尔摩",
             "departStation": "Sthlm Central",
-            "departTime": "18:03",
+            "departStringTime": "2020-12-26 18:03",
+
+            "destCity": "Kiruna",
             "destStation": "Kiruna stn",
-            "destTime": "09:11(next day)"
+            "destStringTime": "2020-12-27 09:11",
+
+            "trainNum": 94,
+
         },
         {
-            "trainNum": 93,
-            "depart": "Abisko",
-            "dest": "斯德哥尔摩",
+            "departCity": "Abisko",
             "departStation": "Abisko Ostra",
-            "departTime": "16:45",
+            "departStringTime": "16:45",
+
+            "destCity": "斯德哥尔摩",
             "destStation": "Sthlm Central",
-            "destTime": "09:22"
+            "destStringTime": "09:22",
+
+            "trainNum": 93,
+
         }
     ],
     "hotels": [
@@ -69,7 +90,7 @@ export default {
             "confirmationNum": "3391544942",
             "code": "7263",
             "checkIn": "14:00 - 17:00",
-            "checkout": "before 11:00"
+            "checkout": "Before 11:00"
         },
         {
             "name": "SPiS Hotel & Hostel",

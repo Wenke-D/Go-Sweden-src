@@ -3,8 +3,9 @@
         <h2>Day {{dayNum}} {{location}}</h2>
         <el-row :gutter="20">
             <template v-for="(value, index) in events">
-                <el-col :sm="24" :md="8" v-bind:key="index">
+                <el-col :sm="24" :md="12" v-bind:key="index">
                     <component v-bind:is="value.type" v-bind="value"/>
+                    <br>
                 </el-col>
             </template>
         </el-row>
