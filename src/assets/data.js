@@ -7,15 +7,20 @@ export default {
             "name": "Billet d'avions"
         },
         {
-            "name": "Passport"
+            "name": "Passport / Carte de séjour"
         },
         {
-            "name": "Validation de VLS-TS"
+            "name": "Validation de VLS-TS / RCPC / Attestaion de Prolongation d'Instruction"
         },
         {
             "name": "Carte d'étudiant"
         }
     ],
+
+    "tools":[
+        "毛巾", "床单", "法国电源转换头"
+    ],
+
     "planes": [
         {
             "departCity":"Paris",

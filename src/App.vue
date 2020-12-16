@@ -78,22 +78,24 @@
 </script>
 
 <style>
-    @media (min-width: 1000px) {
 
-        body {
-            font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-            line-height: 1.5;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
 
-    body {
+    #app {
         font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    @media screen and (min-width: 1000px) {
+
+        #app{
+            font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            line-height: 1.5;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     .el-main {
