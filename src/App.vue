@@ -2,8 +2,18 @@
     <div id="app">
         <el-container>
             <el-main class="el-main">
-                <Document></Document>
-                <Day v-for="(day,index) in plans" v-bind="day" v-bind:key="index"></Day>
+                <el-row>
+                    <el-col :sm="24">
+                        <Document></Document>
+                    </el-col>
+                </el-row>
+                <template v-for="(day,index) in plans">
+                    <el-row v-bind:key="index">
+                        <el-col :sm="24">
+                            <Day v-bind="day"></Day>
+                        </el-col>
+                    </el-row>
+                </template>
             </el-main>
         </el-container>
     </div>
@@ -71,6 +81,8 @@
     @media (min-width: 1000px) {
 
         body {
+            font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            line-height: 1.5;
             width: 80%;
             margin-left: auto;
             margin-right: auto;
