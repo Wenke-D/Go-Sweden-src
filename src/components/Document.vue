@@ -27,10 +27,8 @@
 </template>
 
 <script>
-    import data from "@/assets/data";
-
-    let docs = data.docs
-    let tools = data.tools
+    import docs from "@/assets/data/docs";
+    import tools from "@/assets/data/tools";
 
     export default {
         name: "Document",

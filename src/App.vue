@@ -23,9 +23,12 @@
 <script>
 
     import Day from "@/components/Day";
-    import events from "@/assets/data";
+    import planes from "@/assets/data/planes";
+    import trains from "@/assets/data/trains";
+    import hotels from "@/assets/data/hotels";
     import schedules from "@/assets/schedule";
     import Document from "@/components/Document";
+
 
     export default {
         name: 'App',
@@ -42,11 +45,12 @@
 
     /* load data */
     let table = {
-        Plane: events.planes,
-        Hotel: events.hotels,
-        Train: events.trains
+        Plane: planes,
+        Hotel: hotels,
+        Train: trains
     }
 
+    /* organize data */
     let eachDayPlans = schedules.map(schedule => {
         let events = schedule.schedules.map((e) => {
             let event = table[e].splice(0, 1)[0]
