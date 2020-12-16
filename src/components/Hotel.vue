@@ -4,15 +4,11 @@
                 <div slot="header" class="clearfix">
                     <span class="title">住宿</span>
                     <el-button style="float: right; padding: 3px 0" type="text">
-                        <el-link type="warning" :href="address_url">路线</el-link>
+                        <el-link type="warning" :href="address_url">获取路线</el-link>
                     </el-button>
                 </div>
                 <div class="text item">
                     <h3>{{name}}</h3>
-                </div>
-                <div class="text item">
-                    <p>订单号 : {{confirmationNum}}</p>
-                    <p>密码 : <b>{{code}}</b></p>
                 </div>
                 <div class="text item">
                     <p>入住：{{checkIn}}</p>
@@ -66,6 +62,6 @@
     }
 
     .box-card{
-        border-radius: 35px;
+        border-radius: 25px;
     }
 </style>

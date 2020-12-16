@@ -8,7 +8,7 @@
                     </el-col>
                 </el-row>
                 <template v-for="(day,index) in plans">
-                    <el-row v-bind:key="index">
+                    <el-row v-bind:key="index" :id="'day'+(index+1)">
                         <el-col :sm="24">
                             <Day v-bind="day"></Day>
                         </el-col>
@@ -101,5 +101,6 @@
     .el-main {
         color: #333;
     }
+
 
 </style>

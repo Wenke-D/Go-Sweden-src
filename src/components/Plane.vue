@@ -4,7 +4,7 @@
             <div slot="header" class="clearfix">
                 <span class="title">飞往 {{destCity}} 的航班</span>
                 <el-button style="float: right; padding: 3px 0" type="text">
-                    <el-link type="warning" :href="address_url">路线</el-link>
+                    <el-link type="warning" :href="address_url">获取路线</el-link>
                 </el-button>
             </div>
             <div class="text item">
@@ -107,7 +107,7 @@
     }
 
     .box-card{
-        border-radius: 35px;
+        border-radius: 25px;
     }
 
 </style>
