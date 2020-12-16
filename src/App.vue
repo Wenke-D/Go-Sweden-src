@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <el-container>
+            <Document></Document>
             <el-main class="el-main">
                 <Day v-for="(day,index) in plans" v-bind="day" v-bind:key="index"></Day>
             </el-main>
@@ -14,10 +15,12 @@
     import Day from "@/components/Day";
     import events from "@/assets/data";
     import schedules from "@/assets/schedule";
+    import Document from "@/components/Document";
 
     export default {
         name: 'App',
         components: {
+            Document,
             Day
         },
         data: function () {
