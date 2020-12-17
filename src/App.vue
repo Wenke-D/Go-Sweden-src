@@ -4,7 +4,7 @@
             <el-main class="el-main">
                 <el-row>
                     <el-col :sm="24">
-                        <Document></Document>
+                        <Day0></Day0>
                     </el-col>
                 </el-row>
                 <template v-for="(day,index) in plans">
@@ -21,19 +21,21 @@
 </template>
 
 <script>
-
+    // components
     import Day from "@/components/Day";
+    import Day0 from "@/components/Day0";
+
+    // local data
     import planes from "@/assets/data/planes";
     import trains from "@/assets/data/trains";
     import hotels from "@/assets/data/hotels";
     import schedules from "@/assets/schedule";
-    import Document from "@/components/Document";
 
 
     export default {
         name: 'App',
         components: {
-            Document,
+            Day0,
             Day
         },
         data: function () {
@@ -50,7 +52,7 @@
         Train: trains
     }
 
-    /* organize data */
+    /* organize data pop event 1 by 1*/
     let eachDayPlans = schedules.map(schedule => {
         let events = schedule.schedules.map((e) => {
             let event = table[e].splice(0, 1)[0]

@@ -31,7 +31,7 @@
     import tools from "@/assets/data/tools";
 
     export default {
-        name: "Document",
+        name: "Day0",
         data: function () {
             return {
                 docs: docs,
