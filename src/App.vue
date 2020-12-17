@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <a href="https://github.com/Wenke-D/Go-Sweden-src" target="_blank">Github Src</a>
         <el-container>
             <el-main class="el-main">
                 <el-row>
