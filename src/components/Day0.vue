@@ -5,8 +5,10 @@
 
         <el-card class="box-card">
             <div slot="header" class="clearfix">
-                <span class="title">文件</span>
-                <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                <span class="title">Docs à préparer</span>
+                <el-button style="float: right; padding: 3px 0" type="text">
+                    <el-link type="warning" href="tel:+33766684919">需要打印？</el-link>
+                </el-button>
             </div>
             <ul>
                 <li v-for="(value, index) in docs" :key="index" class="text item">
@@ -16,12 +18,23 @@
         </el-card>
         <el-card class="box-card">
             <div slot="header" class="clearfix">
-                <span class="title">日用品</span>
-                <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                <span class="title">Notice</span>
+                <el-button style="float: right; padding: 3px 0" type="text">
+                    <el-link type="warning"
+                             href="https://www.krisinformation.se/en/hazards-and-risks/disasters-and-incidents/2020/official-information-on-the-new-coronavirus/visiting-sweden-during-the-covid-19-pandemic">
+                        More info about Covid-19 in Sweden
+                    </el-link>
+                </el-button>
             </div>
-            <div v-for="(value, index) in tools" :key="index" class="text item">
-                {{value}}
-            </div>
+            <ul>
+                <li v-for="(value, index) in tools" :key="index" class="text item">
+                    {{value.content}}
+                    <el-link type="info"
+                             :href="value.url" v-if="value.url!==undefined">
+                        plus de détail
+                    </el-link>
+                </li>
+            </ul>
         </el-card>
     </div>
 </template>
