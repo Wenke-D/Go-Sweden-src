@@ -14,11 +14,11 @@ export default [
     {
         "departCity": "Abisko",
         "departStation": "Abisko Ostra",
-        "departStringTime": "16:45",
+        "departStringTime": "2021-01-03 16:45",
 
         "destCity": "斯德哥尔摩",
         "destStation": "Sthlm Central",
-        "destStringTime": "09:22",
+        "destStringTime": "2021-01-04 09:22",
 
         "trainNum": 93,
 
