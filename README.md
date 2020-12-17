@@ -1,4 +1,6 @@
-# go_sweden
+# go_sweden_src
+
+source files of website https://wenke-d.github.io/Go-Sweden/
 
 ## Project setup
 ```
